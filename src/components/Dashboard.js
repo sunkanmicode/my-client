@@ -11,7 +11,7 @@ function Dashboard({ setAuth}) {
     const getName = async()=>{
         try {
             
-            const response = await fetch('http://localhost:4000/dashboard/',{
+            const response = await fetch('https://dry-scrubland-57259.herokuapp.com/dashboard/',{
                 method: 'GET',
                 headers: {token: localStorage.token}
             });

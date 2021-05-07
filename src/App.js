@@ -26,7 +26,7 @@ function App() {
 
   const isVerified = async()=>{
     try {
-      const response = await fetch('http://localhost:4000/auth/is-verify',{
+      const response = await fetch('https://dry-scrubland-57259.herokuapp.com/auth/is-verify',{
         method: 'GET',
         headers: {token: localStorage.token}
       });

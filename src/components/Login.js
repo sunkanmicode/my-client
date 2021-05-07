@@ -19,7 +19,7 @@ function Login( { setAuth }) {
         try {
                 const body = { email, password}
 
-            const response = await fetch('http://localhost:4000/auth/login',{
+            const response = await fetch('https://dry-scrubland-57259.herokuapp.com/auth/login',{
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(body)
