@@ -29,7 +29,7 @@ function Login( { setAuth }) {
                 localStorage.setItem('token', data.token);
                 // console.log(data);
                 setAuth(true)
-                toast.success('login successful')
+                toast.success('Login Successful')
             }else{
                 setAuth(false)
                 toast.error(data)
