@@ -64,4 +64,21 @@ h4{
   background-color: black;
   color: #fff;
 }
+.header{
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.header ul li{
+  list-style: none;
+  display: inline-block;
+}
+.header li a{
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.header h1{
+  text-decoration: none;
+}
 

@@ -2,8 +2,14 @@ import React from 'react'
 
 function Header() {
     return (
-        <div>
-            <h1>am here</h1>
+        <div className='header'>
+            <h1 className='logo'><a href='/'>Sunkanmi</a>  </h1>
+            <ul>
+                <li><a href='/'>Home</a> </li>
+                <li><a href='/register'>Register</a> </li>
+                <li><a href='/login'>Login</a> </li>
+            </ul>
+
         </div>
     )
 }

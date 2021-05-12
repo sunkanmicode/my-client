@@ -8,6 +8,8 @@ import {
 import { toast } from 'react-toastify';
 // import 'react-toastify/dist/react-toastify.css';
 
+import Header from './components/Header'
+import Home from './components/Home'
 import Login from './components/Login';
 import Register from './components/Register';
 import Dashboard from './components/Dashboard';
@@ -46,9 +48,15 @@ function App() {
   
   return (
     <Fragment>
+      <Header />
+    
+      
       <Router>
         <div className='container'>
         <Switch>
+          <Route exact path='/'
+             component={ Home} 
+          />
           <Route exact path ='/login' 
             render={props =>
                   !isAuth?( <Login {...props} 
